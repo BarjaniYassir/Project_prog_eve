@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration For Le Paradis Sucré de Yassir</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="form-wrapper login">
+                <h2>Login</h2>
+                <div class="input-box">
+                    <input type="email"  placeholder="Email"  id="email" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="pass" placeholder="Password" required>
+                     <p id="message"></p>
+                </div>
+                <div class="forgot-pass">
+                    <input type="checkbox" onclick="showPass()" >Show password
+                    <br>
+                    <br>
+                    <a href="#">Forgot Password?</a>  
+                </div>
+                <button onclick="signIn()" >Login</button>
+                <div class="sign-link">
+                    <p>Don't have an account? <a href="#" onclick="registerActive()">Register</a></p>
+                </div>
+            </form>
+        </div>
+        
+        <div class="form-wrapper register">
+            <form action="">
+                <h2>Registration</h2>
+                
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" id="name" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="date sous forme jour/mmois/année" id="date" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" id="email" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" id="password" required>
+                    <div class="input-box">
+                 <input type="password" placeholder="Password confirmation" id="confirmationPass"  required>  
+                 <span id="s1" class="message"></span>
+                </div>
+                <button onclick="add()">Register</button>
+                <div class="sign-link">
+                    <p>Already have an account? <a href="#"  onclick="loginActive()" >signIn</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html> 
