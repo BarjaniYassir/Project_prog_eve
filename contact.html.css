@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: tan;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-image: url('fond.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            width: 100%;
+            margin: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .location,
+        .contact {
+            flex: 1;
+            padding: 150px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .location {
+            background-color: rgba(122, 67, 0, 0.436);
+        }
+
+        .contact {
+            background-color: rgba(85, 48, 4, 0.436);
+        }
+
+        .location iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+        }
+
+        .contact form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .contact input,
+        .contact textarea {
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(20px);
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 5px;
+            outline: 0;
+            border-radius: 6px;
+            font-size: 15px;
+            resize: none;
+            background: white;
+            color: black;
+        }
+
+        .contact .btn {
+            width: 100%;
+            height: 45px;
+            background: white;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: rgba(122, 67, 0, 0.436);
+            padding: 15px;
+            color: black;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        footer h4 {
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        .footer-contact, .footer-social {
+            flex: 1;
+        }
+
+        .footer-social ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-social ul li {
+            margin: 0;
+        }
+
+        .footer-social ul li a img {
+            width: 25px;
+            height: 25px;
+            border-radius: 25%;
+        }
+    </style>
+</head>
+<body>
+    <section id="contact">
+        <div class="container">
+            <div class="location">
+                <h2>Notre Adresse</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1697.8900451226448!2d-8.008055890216065!3d31.667235696734085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafec33f45ddda1%3A0x7083fffa3ea3af67!2sIbn%20Tofail%2C%20Marrakech%2040000!5e0!3m2!1sfr!2sma!4v1716168220837!5m2!1sfr!2sma" ></iframe>
+            </div>
+            <div class="contact">
+                <h2>Envoyer un message</h2>
+                <form action="#">
+                    <input type="text" placeholder="Nom">
+                    <input type="email" placeholder="Adresse email">
+                    <input type="text" placeholder="Objet">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button type="submit" class="btn" id="env">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>Adresse: LOT HAMRA ROUTE CASA, Marrakech, Maroc</p>
+            <p>Téléphone: +2126-5753-7962</p>
+            <p>Email: LeParadisSucrédeYassir@gmail.com</p>
+        </div>
+        <div class="footer-social">
+            <h4>Suivez-nous</h4>
+            <ul>
+                <li><a href="#"><img src="insta.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="pintrest.png" alt="Pinterest"></a></li>
+                <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
