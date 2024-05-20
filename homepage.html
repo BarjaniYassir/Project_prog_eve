@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Le Paradis Sucré de Yassir</title>
+  <link rel="stylesheet" href="homepagestyle.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <div class="logo-content">
+        <img src="Le Paradis Sucré de Yassir.png" alt="Le Paradis Sucré de Yassir">
+        <span class="patisserie-name">Le Paradis Sucré de Yassir</span>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="homeprojethtml.html">Accueil</a></li>
+        <li><a href="Nos specialites.html">Nos Spécialités</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <section class="histoire">
+      <h2>Notre Histoire</h2>
+      <p>Artisan pâtissier et chocolatier à Marrakech, Yassir est reconnu pour son savoir-faire exceptionnel depuis les années 2000. Passionné par son métier, il perpétue la tradition de la Haute Pâtisserie marocaine avec créativité et excellence.<br><br>Fort de son expérience de près de 40 ans, Yassir sélectionne avec soin les meilleurs ingrédients locaux pour créer des délices qui séduisent les papilles des gourmets. Sa quête incessante de qualité l'a amené à parcourir le monde à la recherche des meilleures fèves de cacao, faisant de lui l'un des rares chocolatiers marocains à produire son propre chocolat de la fève à la tablette.<br><br>Son engagement envers l'excellence lui a valu d'être reconnu comme l'un des meilleurs artisans chocolatiers du Maroc. Sans cesse à la recherche de l'innovation, Yassir offre à ses clients une expérience gustative unique, alliant tradition et modernité dans chacune de ses créations.</p>
+    </section>
+
+    <h2>Nos Délices</h2>
+    <section class="patisseries">
+      <div class="patisserie">
+        <img src="ghriba.webp" alt="Ghriba">
+        <h3>Ghriba</h3>
+        <p>La Ghriba, une pâtisserie marocaine, est réputée pour sa texture moelleuse et ses saveurs exquises. Préparée avec des amandes, du sucre, des œufs et des épices, elle est appréciée lors des fêtes et comme en-cas sucré au quotidien.</p>
+        <p class="price">Prix : 10 DH</p>
+        <button class="add-to-cart" onclick="addToCart('Ghriba', 10, 'ghriba.webp')">Ajouter au panier</button>
+      </div>
+      
+      <div class="patisserie">
+        <img src="brwita.jpeg" alt="Briwat">
+        <h3>Briwat</h3>
+        <p>Les briwats, une spécialité marocaine, sont de délicieuses pâtisseries en forme de triangle, généralement farcies avec un mélange sucré ou salé. Ces friandises croustillantes sont un incontournable de la cuisine marocaine, souvent servies comme dessert ou en-cas lors des occasions spéciales.</p>
+        <p class="price">Prix : 7 DH</p>
+        <button class="add-to-cart" onclick="addToCart('Briwat', 7, 'brwita.jpeg')">Ajouter au panier</button>
+      </div>
+      
+      <div class="patisserie">
+        <img src="Chebakia.jpg" alt="Chebakia">
+        <h3>Chebakia</h3>
+        <p>Les chebakias sont de délicieuses pâtisseries marocaines en forme de fleur, croustillantes à l'extérieur, généreusement arrosées de miel et saupoudrées de graines de sésame. Elles sont particulièrement appréciées pendant le Ramadan et les occasions festives au Maroc.</p>
+        <p class="price">Prix : 45 DH</p>
+        <button class="add-to-cart" onclick="addToCart('Chebakia', 45, 'Chebakia.jpg')">Ajouter au panier</button>
+      </div>
+
+      <div class="patisserie">
+        <img src="ke3b ghzal.jpg" alt="Ke3b ghzal">
+        <h3>Ke3b ghzal</h3>
+        <p>Les chebakias sont de délicieuses pâtisseries marocaines en forme de fleur, croustillantes à l'extérieur, généreusement arrosées de miel et saupoudrées de graines de sésame. Elles sont particulièrement appréciées pendant le Ramadan et les occasions festives au Maroc.</p>
+        <p class="price">Prix : 130 DH</p>
+        <button class="add-to-cart" onclick="addToCart('Ke3b ghzal', 130, 'ke3b ghzal.jpg')">Ajouter au panier</button>
+      </div>
+
+      <div class="patisserie">
+        <img src="fekkas.jpg" alt="Fekkas">
+        <h3>Fekkas</h3>
+        <p>La fekkas est une délicieuse pâtisserie marocaine traditionnelle, souvent préparée avec des amandes, des graines de sésame, et parfois des épices. Elle est connue pour sa texture croustillante et son goût délicieusement sucré. La fekkas est souvent servie avec du thé à la menthe comme dessert ou en-cas lors des occasions spéciales.</p>
+        <p class="price">Prix : 65 DH</p>
+        <button class="add-to-cart" onclick="addToCart('Fekkas', 65 , 'fekkas.jpg')">Ajouter au panier</button>
+      </div>
+
+      <div class="patisserie">
+        <img src="Pastilla.jpg" alt="Pastilla">
+        <h3>Pastilla</h3>
+        <p>La pastilla, également connue sous le nom de Bastilla, est un plat marocain emblématique qui associe des couches de feuilles de brick croustillantes, une farce de viande et des épices. Ce mélange sucré-salé est souvent saupoudré de sucre glace et de cannelle, créant ainsi un contraste de saveurs unique. La pastilla est appréciée pour sa combinaison complexe de textures et de goûts.</p>
+        <p class="price">Prix : 450 DH</p>
+        <button class="add-to-cart" onclick="addToCart('Pastilla', 450, 'Pastilla.jpg')">Ajouter au panier</button>
+      </div>
+
+      <div class="patisserie">
+        <img src="baklawa.jpeg" alt="Baklawa">
+        <h3>Baklawa</h3>
+        <p>Le Baklawa est une pâtisserie traditionnelle du Moyen-Orient, également populaire au Maroc. Il se compose de fines couches de pâte phyllo ou feuilletée alternées avec des noix ou des pistaches, puis trempées dans un sirop sucré à base de miel ou de sirop de sucre.</p>
+        <p class="price">Prix :35 DH</p>
+        <button class="add-to-cart" onclick="addToCart('Baklawa', 35, 'baklawa.jpeg')">Ajouter au panier</button>
+      </div>
+
+      <div class="patisserie">
+        <img src="Makrout.jpeg" alt="Makrout">
+        <h3>Makrout</h3>
+        <p>Le Makrout est une pâtisserie maghrébine originaire du Maroc, souvent consommée pendant le mois de Ramadan et lors des célébrations. Il se compose d'une pâte de semoule fine et ferme, pétrie avec du beurre clarifié (smen) et de l'eau de fleur d'oranger, puis farcie avec une pâte de dattes parfumée à la cannelle et à la fleur d'oranger.</p>
+        <p class="price">Prix : 10 DH</p>
+        <button class="add-to-cart" onclick="addToCart('Makrout', 10, 'Makrout.jpeg')">Ajouter au panier</button>
+      </div>
+
+      <div class="patisserie">
+        <img src="Bechkito.jpeg" alt="Bechkito">
+        <h3>Bechkito</h3>
+        <p>Le Bechkito est une douceur marocaine à base d'amandes et de miel. Il est préparé en mélangeant des amandes moulues avec du sucre et des épices, puis en façonnant le mélange en petites boules ou en losanges. Les pièces sont ensuite frites jusqu'à obtenir une couleur dorée et croustillante, et enfin trempées dans du miel parfumé pour un goût sucré et savoureux.</p>
+        <p class="price">Prix : 15 DH</p>
+        <button class="add-to-cart" onclick="addToCart('Bechkito', 15, 'Bechkito.jpeg')">Ajouter au panier</button>
+      </div>
+  
+
+  <div class="patisserie">
+    <img src="zalija.jpg" alt="zalija">
+    <h3>Zalija</h3>
+    <p>La zalija est une douceur marocaine à base d'amandes et de miel. Elle est préparée en mélangeant des amandes moulues avec du sucre et des épices, puis en façonnant le mélange en petites boules ou en losanges. Les pièces sont ensuite frites jusqu'à obtenir une couleur dorée et croustillante, et enfin trempées dans du miel parfumé pour un goût sucré et savoureux.</p>
+    <p class="price">Prix : 30 DH</p>
+    <button class="add-to-cart" onclick="addToCart('Zalija', 30, 'zalija.jpg')">Ajouter au panier</button>
+  </div>
+  
+  <div class="patisserie">
+    <img src="Boule de neige.jpeg" alt="Boule de neige">
+    <h3>Boule de neige </h3>
+    <p>La boule de neige est une douceur marocaine à base d'amandes et de miel. Elle est préparée en mélangeant des amandes moulues avec du sucre et des épices, puis en façonnant le mélange en petites boules ou en losanges. Les pièces sont ensuite frites jusqu'à obtenir une couleur dorée et croustillante, et enfin trempées dans du miel parfumé pour un goût sucré et savoureux.</p>
+    <p class="price">Prix : 45 DH</p>
+    <button class="add-to-cart" onclick="addToCart('Boule de neige', 45, 'Boule de neige.jpeg')">Ajouter au panier</button>
+  </div>
+  
+  <div class="patisserie">
+    <img src="sellou.jpeg" alt="sellou">
+    <h3>Sellou</h3>
+    <p>Le sellou est une douceur marocaine à base d'amandes et de miel. Il est préparé en mélangeant des amandes moulues avec du sucre et des épices, puis en façonnant le mélange en petites boules ou en losanges. Les pièces sont ensuite frites jusqu'à obtenir une couleur dorée et croustillante, et enfin trempées dans du miel parfumé pour un goût sucré et savoureux.</p>
+    <p class="price">Prix : 150 DH</p>
+    <button class="add-to-cart" onclick="addToCart('Sellou', 150, 'sellou.jpeg')">Ajouter au panier</button>
+  </div>
+</section>
+</div>
+
+  <footer>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Adresse: LOT HAMRA ROUTE CASA, Marrakech, Maroc</p>
+      <p>Téléphone: +2126-5753-7962</p>
+      <p>Email: LeParadisSucrédeYassir@gmail.com</p>
+    </div>
+    <div class="footer-social">
+      <h4>Suivez-nous</h4>
+      <ul>
+        <li><a href="#"><img src="insta.png" alt="Instagram"></a></li>
+        <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+        <li><a href="#"><img src="pintrest.png" alt="Pinterest"></a></li>
+        <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="homepage.js"></script>
+</body>
+</html>
